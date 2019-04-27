@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/ShamanOfTheAleClan/finalTest/issues"
   },
-  "homepage": "https://github.com/ShamanOfTheAleClan/finalTest#readme"
+  "homepage": "https://github.com/ShamanOfTheAleClan/finalTest#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2"
+  }
 }

@@ -13,14 +13,14 @@ nav {
     }
     .burger {
         box-sizing:border-box;
-        #nav-icon3 {
+        #burger {
             width: 45px;
             height: 30px;
             position: relative;
             transform: rotate(0deg);
             transition: .5s ease-in-out;
         }
-        #nav-icon3 span {
+        #burger span {
             display: block;
             position: absolute;
             height: 5px;
@@ -32,27 +32,27 @@ nav {
             transform: rotate(0deg);
             transition: .25s ease-in-out;
         }
-        #nav-icon3 span:nth-child(2) {
+        #burger span:nth-child(1) {
             top: 0px;
         }
-        #nav-icon3 span:nth-child(3),#nav-icon3 span:nth-child(4) {
+        #burger span:nth-child(2),#burger span:nth-child(3) {
             top: 17px;
         }
-        #nav-icon3 span:nth-child(5) {
+        #burger span:nth-child(4) {
             top: 34px;
         }
-        #burger:checked ~ span:nth-child(2) {
+        #burger.active span:nth-child(1) {
             top: 18px;
             width: 0%;
             left: 50%;
         }
-        #burger:checked ~ span:nth-child(3) {
+        #burger.active span:nth-child(2) {
             transform: rotate(45deg);
         }
-        #burger:checked ~ span:nth-child(4) {
+        #burger.active span:nth-child(3) {
             transform: rotate(-45deg);
         }
-        #burger:checked ~ span:nth-child(5) {
+        #burger.active span:nth-child(4) {
             top: 18px;
             width: 0%;
             left: 50%;
@@ -71,21 +71,20 @@ nav {
         position: absolute;
         background-color: $navBackgroundColor;
         left: 0;
-        height: 100%;
+        top: 0;
+        height: 100vh;
         width: 160px;
         transition: 0.5s ease-in-out;
         ul {
             $menuPaddingLeft: 40px;
             padding-inline-start: 0;
             margin-block-start:0;
-            padding-top: 80px;
+            padding-top: 90px;
             li {
                 list-style-type: none;
                 color: $navTextColor;
                 font-size: 18px;
-                margin-bottom: 30px;
-                //variable in {ul}
-                padding-left: $menuPaddingLeft;         
+                padding: 15px 0 15px $menuPaddingLeft;
             }
             li:hover {
                 border-left: 3px solid $primaryColorOne;

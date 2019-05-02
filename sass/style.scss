@@ -1,6 +1,14 @@
 @import "colors";
 @import "navBar";
+@import "articles";
+@import "mixins";
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    main {
+        @include flexColumn;
+        
+
+    }
 }

@@ -1,9 +1,13 @@
 nav {
+    z-index:1;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    left:0;
     display: flex;
     justify-content: space-between;
     background-color: $navBackgroundColor;
     padding: 10px 20px 10px 20px;
-    max-height: 60px;
     box-sizing:border-box;
     .logo {
         z-index: 5;
@@ -63,10 +67,9 @@ nav {
 
 
 
-    input {
-        display:none;
-    }
+    
     .menu-wrap {
+        z-index: 1;
         transform: translateX(-160px);
         position: absolute;
         background-color: $navBackgroundColor;

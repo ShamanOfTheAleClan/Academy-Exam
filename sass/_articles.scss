@@ -1,0 +1,50 @@
+@import "colors";
+@import "mixins";
+
+
+article:nth-of-type(1) {
+    @include flexColumn;
+    background-color: rgba(28, 28, 28, 0.63);
+    background-image: url("assets/photo-1480714378408-67cf0d13bc1b.png");
+    background-blend-mode: darken;
+    padding: 80px 20px 0 20px;
+    .text {
+        .logo {
+            width: 200px;
+            svg {
+                width: 100%;
+            }
+        }
+        .header-line-text {
+            h1 {
+                color: $navTextColor;
+                font-size: 36px;
+            }
+            .line {
+                height: 0;
+                width: 74px;
+                border-top: 2px solid $navTextColor;
+                opacity:0.8;
+            }
+            p {
+                color: $navTextColor;
+                opacity: 0.8;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+        button {
+            width: 135px;
+            height: 42px;
+            border: 2px solid $navTextColor;
+            background-color: rgba(0,0,0,0);
+            color: $navTextColor;
+        }
+    }
+    form {
+        max-height: 423px;
+        max-width: 360px;
+    }
+}
+

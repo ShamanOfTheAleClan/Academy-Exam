@@ -1,0 +1,211 @@
+body, main, h1, h2, h3, article, ul, p, legend, input {
+  margin: 0;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  padding: 0;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-padding-end: 0;
+  padding-inline-end: 0; }
+
+nav {
+  z-index: 1;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #1C1C1C;
+  padding: 10px 20px 10px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  nav .logo {
+    z-index: 5; }
+    nav .logo svg {
+      height: 100%; }
+  nav .burger {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    nav .burger #burger {
+      width: 45px;
+      height: 30px;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
+    nav .burger #burger span {
+      display: block;
+      position: absolute;
+      height: 5px;
+      width: 100%;
+      background: #E27866;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      transition: .25s ease-in-out; }
+    nav .burger #burger span:nth-child(1) {
+      top: 0px; }
+    nav .burger #burger span:nth-child(2), nav .burger #burger span:nth-child(3) {
+      top: 17px; }
+    nav .burger #burger span:nth-child(4) {
+      top: 34px; }
+    nav .burger #burger.active span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%; }
+    nav .burger #burger.active span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    nav .burger #burger.active span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    nav .burger #burger.active span:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%; }
+  nav .menu-wrap {
+    z-index: 1;
+    -webkit-transform: translateX(-160px);
+    transform: translateX(-160px);
+    position: absolute;
+    background-color: #1C1C1C;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 160px;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; }
+    nav .menu-wrap ul {
+      padding-top: 90px; }
+      nav .menu-wrap ul li {
+        list-style-type: none;
+        color: #FFFFFF;
+        font-size: 18px;
+        padding: 15px 0 15px 40px; }
+      nav .menu-wrap ul li:hover {
+        border-left: 3px solid #E27866;
+        padding-left: 37px; }
+  nav #burger:checked + .menu-wrap {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+
+article:nth-of-type(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(28, 28, 28, 0.63);
+  background-image: url("assets/photo-1480714378408-67cf0d13bc1b.png");
+  background-blend-mode: darken;
+  padding: 60px 20px 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  article:nth-of-type(1) .text .logo {
+    width: 200px;
+    margin-top: 65px;
+    margin-bottom: 22px; }
+    article:nth-of-type(1) .text .logo svg {
+      width: 100%; }
+  article:nth-of-type(1) .text .header-line-text h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    margin-bottom: 25px; }
+  article:nth-of-type(1) .text .header-line-text .line {
+    height: 0;
+    width: 74px;
+    border-top: 2px solid #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 25px; }
+  article:nth-of-type(1) .text .header-line-text p {
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px; }
+  article:nth-of-type(1) .text button {
+    width: 135px;
+    height: 42px;
+    border: 2px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    margin: 45px 0; }
+  article:nth-of-type(1) .form-wrapper {
+    background-color: #F5F5F5;
+    font-family: 'Montserrat';
+    max-width: 360px;
+    border-radius: 3px; }
+    article:nth-of-type(1) .form-wrapper h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 17px 10px;
+      text-align: center; }
+      article:nth-of-type(1) .form-wrapper h1 span {
+        color: #E27866; }
+    article:nth-of-type(1) .form-wrapper form {
+      max-height: 423px;
+      background-color: white; }
+      article:nth-of-type(1) .form-wrapper form fieldset:first-of-type .legend {
+        margin-top: 30px; }
+      article:nth-of-type(1) .form-wrapper form fieldset {
+        padding: 0 20px;
+        border: none; }
+        article:nth-of-type(1) .form-wrapper form fieldset .legend {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 22px; }
+        article:nth-of-type(1) .form-wrapper form fieldset input {
+          outline: none;
+          margin-bottom: 29px;
+          font-family: 'Montserrat'; }
+        article:nth-of-type(1) .form-wrapper form fieldset input[type=text] {
+          border: none;
+          border-bottom: 1px solid #D8D8D8;
+          font-size: 12px;
+          width: 240px; }
+          article:nth-of-type(1) .form-wrapper form fieldset input[type=text]::-webkit-input-placeholder {
+            color: #D8D8D8; }
+          article:nth-of-type(1) .form-wrapper form fieldset input[type=text]::-moz-placeholder {
+            color: #D8D8D8; }
+          article:nth-of-type(1) .form-wrapper form fieldset input[type=text]:-ms-input-placeholder {
+            color: #D8D8D8; }
+          article:nth-of-type(1) .form-wrapper form fieldset input[type=text]::-ms-input-placeholder {
+            color: #D8D8D8; }
+          article:nth-of-type(1) .form-wrapper form fieldset input[type=text]::placeholder {
+            color: #D8D8D8; }
+      article:nth-of-type(1) .form-wrapper form button {
+        background-color: #41D395;
+        border: none;
+        width: 100%;
+        padding: 18px 0;
+        color: white; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }

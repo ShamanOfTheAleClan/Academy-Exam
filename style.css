@@ -1,4 +1,4 @@
-body, main, h1, h2, h3, article, ul, p, legend, input {
+* {
   margin: 0;
   -webkit-margin-before: 0;
   margin-block-start: 0;
@@ -114,6 +114,7 @@ article:nth-of-type(1) {
   background-color: rgba(28, 28, 28, 0.63);
   background-image: url("assets/photo-1480714378408-67cf0d13bc1b.png");
   background-blend-mode: darken;
+  background-size: cover;
   padding: 60px 20px 0 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -154,7 +155,7 @@ article:nth-of-type(1) {
     article:nth-of-type(1) .form-wrapper h1 {
       font-size: 20px;
       font-weight: 600;
-      margin: 17px 10px;
+      margin: 17px 20px;
       text-align: center; }
       article:nth-of-type(1) .form-wrapper h1 span {
         color: #E27866; }
@@ -173,7 +174,53 @@ article:nth-of-type(1) {
         article:nth-of-type(1) .form-wrapper form fieldset input {
           outline: none;
           margin-bottom: 29px;
-          font-family: 'Montserrat'; }
+          font-family: 'Montserrat';
+          padding-bottom: 4px;
+          padding-left: 10px; }
+        article:nth-of-type(1) .form-wrapper form fieldset input:checked + label > .radio-button::after {
+          display: inline-block;
+          content: "";
+          position: absolute;
+          height: 6px;
+          width: 6px;
+          top: 3.5px;
+          left: 3.5px;
+          background-color: #41D395;
+          border-radius: 50%; }
+        article:nth-of-type(1) .form-wrapper form fieldset input:checked + label {
+          opacity: 1; }
+        article:nth-of-type(1) .form-wrapper form fieldset .input-wrap {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: left;
+          -ms-flex-pack: left;
+          justify-content: left; }
+        article:nth-of-type(1) .form-wrapper form fieldset label {
+          opacity: 0.5;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          font-weight: 600;
+          font-size: 9px;
+          margin-bottom: 42px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+          article:nth-of-type(1) .form-wrapper form fieldset label .radio-button {
+            background-color: white;
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+            border: 1px solid #41D395;
+            margin-right: 5px;
+            position: relative; }
+          article:nth-of-type(1) .form-wrapper form fieldset label span {
+            margin-right: 17px; }
+        article:nth-of-type(1) .form-wrapper form fieldset input[type=radio] {
+          display: none; }
         article:nth-of-type(1) .form-wrapper form fieldset input[type=text] {
           border: none;
           border-bottom: 1px solid #D8D8D8;
@@ -194,7 +241,8 @@ article:nth-of-type(1) {
         border: none;
         width: 100%;
         padding: 18px 0;
-        color: white; }
+        color: white;
+        font-size: 18px; }
 
 body {
   font-family: 'Montserrat', sans-serif; }

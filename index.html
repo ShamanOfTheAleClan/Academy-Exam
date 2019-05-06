@@ -38,7 +38,7 @@
             </div>
         </nav>
 
-        <article>   
+        <article id="home">   
 
             <div class="text">
                 <div class="logo">
@@ -51,19 +51,34 @@
                 </div> 
                 <button>DOWNLOAD</button>
             </div>
+
             <div class="form-wrapper">
                 <h1>Try Your <span>FREE</span> Trial Today</h1>
                 <form action="">
+
                     <fieldset>
                         <div class="legend">Your details</div>
                         <input type="text" placeholder="First Name"><br>
                         <input type="text" placeholder="Last Name"><br>
                         <input type="text" placeholder="Phone Number">
                     </fieldset>
+
                     <fieldset>
                         <div class="legend">Type of Subscription</div>
-                        <input type="radio" name="subscription" value="monthly" checked>
-                        <input type="radio" name="subscription" value="yearly">
+                        <div class="input-wrap">
+
+                            <input id="radioMonthly" class="radio-button-input" type="radio" name="subscription" value="monthly" checked>
+                            <label class="radio-button-label" for="radioMonthly">
+                                <div class="radio-button"></div>
+                                <span>MONTHLY</span>
+                            </label>
+
+                            <input id="radioYearly" class="radio-button-input" type="radio" name="subscription" value="yearly">
+                            <label class="radio-button-label" for="radioYearly">
+                                <div class="radio-button"></div>
+                                <span>YEARLY</span>
+                            </label>
+                        </div>
                     </fieldset>
                     <button type="button" onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">GET STARTED</button>
                 </form>
@@ -71,7 +86,7 @@
         </article>
 
         <article></article>
-        <article></article> 
+        <article id="features"></article> 
     </main>
 </body>
 </html>

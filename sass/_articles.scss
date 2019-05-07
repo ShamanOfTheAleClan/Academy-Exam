@@ -1,0 +1,158 @@
+@import "colors";
+@import "mixins";
+
+
+article:nth-of-type(1) {
+    @include flexColumn;
+    background-color: rgba(28, 28, 28, 0.63);
+    background-image: url("assets/photo-1480714378408-67cf0d13bc1b.png");
+    background-blend-mode: darken;
+    background-size: cover;
+    padding: 60px 20px 0 20px;
+    box-sizing: border-box;
+    .text {
+        .logo {
+            width: 200px;
+            margin-top: 65px;
+            margin-bottom: 22px;
+            svg {
+                width: 100%;
+            }
+        }
+        .header-line-text {
+
+            h1 {
+                color: $navTextColor;
+                font-size: 36px;
+                margin-bottom: 25px; 
+            }
+            .line {
+                height: 0;
+                width: 74px;
+                border-top: 2px solid $navTextColor;
+                opacity:0.8;
+                margin-bottom: 25px;
+            }
+            p {
+                color: $navTextColor;
+                opacity: 0.8;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+        button {
+            width: 135px;
+            height: 42px;
+            border: 2px solid $navTextColor;
+            background-color: rgba(0,0,0,0);
+            color: $navTextColor;
+            margin: 45px 0;
+        }
+    }
+    
+
+
+    .form-wrapper {
+        background-color: #F5F5F5;
+        font-family: 'Montserrat';
+        max-width: 360px;
+        border-radius: 3px;
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 17px 20px;
+            text-align: center;
+            span {
+                color: $primaryColorOne;
+            }
+        }
+        form {
+            max-height: 423px;
+            background-color: white;
+            fieldset:first-of-type {
+                .legend {
+                    margin-top: 30px;
+                }
+            }
+            fieldset {
+                padding: 0 20px;
+                border: none;
+                .legend {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 22px;
+                }
+                input {
+                    outline: none;
+                    margin-bottom: 29px;
+                    font-family: 'Montserrat';
+                    padding-bottom: 4px;
+                    padding-left: 10px;
+                }
+                input:checked + label>.radio-button::after {
+                    display:inline-block;
+                    content:"";
+                    position:absolute;
+                    height: 6px;
+                    width: 6px;
+                    top: 3.5px;
+                    left: 3.5px;
+                    background-color: $primaryColorTwo;
+                    border-radius: 50%;
+                }
+                input:checked + label {
+                    opacity: 1;
+                }
+                .input-wrap {
+                    display: flex;
+                    justify-content: left;
+                }
+                label {
+                    opacity: 0.5;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 9px;
+                    margin-bottom: 42px;
+                    box-sizing: border-box;
+                    .radio-button {
+                        background-color: white;
+                        height: 13px;
+                        width: 13px;
+                        border-radius: 50%;
+                        border: 1px solid $primaryColorTwo;
+                        margin-right: 5px;
+                        position: relative;
+                    }
+                    span {
+                        margin-right: 17px;
+                    }
+                }
+                
+                input[type=radio] {
+                    display:none;
+                }
+                input[type=text] {
+                    border:none;
+                    border-bottom: 1px solid #D8D8D8;
+                    font-size: 12px;
+                    width: 240px;
+                    &::placeholder {
+                        color: #D8D8D8;
+
+                    }
+                }
+            }
+            button {
+                background-color: $primaryColorTwo;
+                border:none;
+                width: 100%;
+                padding: 18px 0;
+                color: white;
+                font-size: 18px; 
+            }
+        }
+    }
+}
+

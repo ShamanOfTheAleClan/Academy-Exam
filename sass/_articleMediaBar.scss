@@ -1,0 +1,30 @@
+@import "colors";
+@import "mixins";
+
+article {
+    background-color: white;
+    padding: 20px;
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+    }
+    p {
+        display: none;
+        font-size: 14px;
+        font-weight: 400;
+        color: #86878B;
+
+    }
+    .media-icon-wrapper {
+        @include flexRow;
+        justify-content: space-between;
+        margin-top: 15px;
+        width: calc(100vw - 40px);
+        .media-icon {
+            
+            max-height: 30px;
+            
+        }
+    }
+}

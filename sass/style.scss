@@ -1,0 +1,13 @@
+@import "reset";
+@import "colors";
+@import "navBar";
+@import "articleOne";
+@import "mixins";
+@import "articleMediaBar";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    main {
+        @include flexColumn;
+    }
+}

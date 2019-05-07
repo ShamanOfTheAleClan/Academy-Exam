@@ -1,0 +1,105 @@
+nav {
+    z-index:1;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    background-color: $navBackgroundColor;
+    padding: 10px 20px 10px 20px;
+    box-sizing:border-box;
+    .logo {
+        z-index: 5;
+        svg {
+            height: 100%;
+        }
+    }
+    .logo-smaller {
+        display: none;
+    }
+    .logo-bigger {
+        // display:none;
+    }
+    .burger {
+        box-sizing:border-box;
+        #burger {
+            width: 45px;
+            height: 30px;
+            position: relative;
+            transform: rotate(0deg);
+            transition: .5s ease-in-out;
+        }
+        #burger span {
+            display: block;
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background: $primaryColorOne;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+        #burger span:nth-child(1) {
+            top: 0px;
+        }
+        #burger span:nth-child(2),#burger span:nth-child(3) {
+            top: 17px;
+        }
+        #burger span:nth-child(4) {
+            top: 34px;
+        }
+        #burger.active span:nth-child(1) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+        }
+        #burger.active span:nth-child(2) {
+            transform: rotate(45deg);
+        }
+        #burger.active span:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+        #burger.active span:nth-child(4) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+        }
+    }
+
+
+
+
+
+    
+    .menu-wrap {
+        z-index: 1;
+        transform: translateX(-160px);
+        position: absolute;
+        background-color: $navBackgroundColor;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 160px;
+        transition: 0.5s ease-in-out;
+        ul {
+            $menuPaddingLeft: 40px;
+            padding-top: 90px;
+            li {
+                list-style-type: none;
+                color: $navTextColor;
+                font-size: 18px;
+                padding: 15px 0 15px $menuPaddingLeft;
+            }
+            li:hover {
+                border-left: 3px solid $primaryColorOne;
+                padding-left: $menuPaddingLeft - 3px;
+            }
+        }
+    }
+    #burger:checked + .menu-wrap{
+        transform: translateX(0px);
+    }
+}

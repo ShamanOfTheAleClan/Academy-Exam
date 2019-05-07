@@ -102,21 +102,6 @@ nav {
     -webkit-transform: translateX(0px);
     transform: translateX(0px); }
 
-article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-size: cover;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
 .header-line-text h1 {
   color: #FFFFFF;
   font-size: 36px;
@@ -251,36 +236,43 @@ article:nth-of-type(1) {
         color: white;
         font-size: 18px; }
 
-article {
+article:nth-last-of-type(2) {
   background-color: white;
-  padding: 20px; }
-  article h2 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #333333; }
-  article p {
-    display: none;
-    font-size: 14px;
-    font-weight: 400;
-    color: #86878B; }
-  article .media-icon-wrapper {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%; }
+  article:nth-last-of-type(2) .text {
+    display: none; }
+    article:nth-last-of-type(2) .text h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333333; }
+    article:nth-last-of-type(2) .text p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #86878B; }
+  article:nth-last-of-type(2) .media-icon-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 15px;
-    width: calc(100vw - 40px); }
-    article .media-icon-wrapper .media-icon {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%; }
+    article:nth-last-of-type(2) .media-icon-wrapper .media-icon {
       max-height: 30px; }
+
+article:nth-of-type(3) {
+  background-image: url("assets/christoffer-engstrom-503481-unsplash.png"); }
 
 body {
   font-family: 'Montserrat', sans-serif; }
@@ -295,3 +287,19 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+
+article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }

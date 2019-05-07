@@ -1,10 +1,12 @@
 @import "colors";
 @import "mixins";
 
-article {
+article:nth-last-of-type(2) {
     background-color: white;
     padding: 20px;
     display: flex;
+    @include flexRow;
+    width: 100%;
     .text {
         display:none;
         h2 {
@@ -20,10 +22,9 @@ article {
         }
     }
     .media-icon-wrapper {
-        @include flexRow;
-        justify-content: space-between;
-        margin-top: 15px;
-        width: calc(100vw - 40px);
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
         .media-icon {
             
             max-height: 30px;

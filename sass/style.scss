@@ -1,13 +1,20 @@
 @import "reset";
 @import "colors";
+@import "mixins";
 @import "navBar";
 @import "articleOne";
-@import "mixins";
-@import "articleMediaBar";
+@import "articleTwoMediaBar";
+@import "articleThree";
 
 body {
     font-family: 'Montserrat', sans-serif;
     main {
         @include flexColumn;
     }
+}
+article {
+    width: 100%;
+    @include flexColumn;
+    background-size: cover;
+    box-sizing: border-box;
 }

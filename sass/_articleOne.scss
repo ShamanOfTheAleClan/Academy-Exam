@@ -1,11 +1,7 @@
 @import "colors";
 @import "mixins";
 
-article {
-    @include flexColumn;
-    background-size: cover;
-    box-sizing: border-box;
-}
+
 .header-line-text {
     h1 {
         color: $navTextColor; 

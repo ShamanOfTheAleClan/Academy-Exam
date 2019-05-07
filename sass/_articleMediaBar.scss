@@ -4,17 +4,20 @@
 article {
     background-color: white;
     padding: 20px;
-    h2 {
-        font-size: 20px;
-        font-weight: 600;
-        color: #333333;
-    }
-    p {
-        display: none;
-        font-size: 14px;
-        font-weight: 400;
-        color: #86878B;
+    display: flex;
+    .text {
+        display:none;
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333333;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #86878B;
 
+        }
     }
     .media-icon-wrapper {
         @include flexRow;

@@ -3,24 +3,11 @@
 
 
 .header-line-text {
-    h1 {
-        color: $navTextColor; 
-        font-size: 36px;
-        margin-bottom: 25px; 
-    }
-    .line {
-        height: 0;
-        width: 74px;
-        border-top: 2px solid $navTextColor;
-        opacity:0.8;
-        margin-bottom: 25px;
-    }
     p {
-        color: $navTextColor;
-        opacity: 0.8;
-        font-weight: 600;
         font-size: 16px;
-        line-height: 23px;
+    }
+    line {
+        opacity: 0.8;
     }
 }
 article:nth-of-type(1) {

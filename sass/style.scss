@@ -1,20 +1,11 @@
 @import "reset";
 @import "colors";
 @import "mixins";
+@import "global";
 @import "navBar";
-@import "articleOne";
-@import "articleTwoMediaBar";
-@import "articleThree";
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    main {
-        @include flexColumn;
-    }
-}
-article {
-    width: 100%;
-    @include flexColumn;
-    background-size: cover;
-    box-sizing: border-box;
-}
+@import "article1";
+@import "article2MediaBar";
+@import "article3";
+@import "article4";
+@import "article5";
+@import "article6";

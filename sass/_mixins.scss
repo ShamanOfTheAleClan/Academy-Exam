@@ -13,3 +13,11 @@
     justify-content: center;
     align-items: center;
 }
+@mixin flexRowBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin line($property) {
+    border-top: 2px solid $property;
+}

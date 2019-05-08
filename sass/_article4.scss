@@ -1,0 +1,49 @@
+@import "colors";
+@import "mixins";
+
+article:nth-of-type(4) {
+    background-color: $navBackgroundColor;
+    display: flex;
+    justify-content: center;
+    padding:  90px 20px;
+    color: white;
+    
+    .wrapper {
+        .header-line-text {
+            margin-bottom: 40px;
+            .line {
+                @include line($primaryColorOne);
+                width: 200px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                opacity: 1;
+            }
+        }
+
+        .text-wrap {
+            .text-wrap-column:first-of-type {
+                margin-bottom: 36px;
+            }
+            .text-wrap-column {
+                @include flexRow;
+                .text-wrap-column-icon {
+                    min-width: 50px;
+                    height: 50px;
+                    background-color: $primaryColorOne;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    @include flexCenter;
+                }
+                .text-wrap-column-text {
+                    h3 {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

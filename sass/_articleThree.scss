@@ -1,0 +1,107 @@
+@import "colors";
+@import "mixins";
+ 
+article:nth-of-type(3) {
+    background-image: linear-gradient(90deg, rgba(226,120,102,0.42) 0%, rgba(102,150,226,0.42) 100%), url("assets/christoffer-engstrom-503481-unsplash.png");
+    background-blend-mode: normal ;
+    
+    .features-button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 340px;
+        input[type=radio] {
+            display: none;
+        }
+        input[type=radio]:checked + label > .features-button {
+            background-color: $primaryColorOne;
+            span {
+                opacity: 1;
+            }
+        }
+        .features-button {
+            width: 100px;
+            height: 100px;
+            background-color: #A37169;
+            @include flexCenter;
+            span {
+                font-size: 14px;
+                color: white;
+                transform: rotate(315deg);
+                opacity: 0.5;
+            }
+        }
+    }
+    .text-image-wrap {
+        @include flexColumn;
+        padding: 0 20px;
+        margin-top: 20px;
+        .text-wrapper {
+            margin-bottom: 20px;
+            color: white;
+            h1 {
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 33px; 
+            }
+            p {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    
+        .image-wrapper {
+            @include flexColumn;
+            max-width: 362px;
+            max-height: 356px;
+            width: 100%;
+            height: calc(100vw - 6px);
+            
+            .image-wrapper-row {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                margin-bottom: 20px;
+                .image {
+                    width: 50%;
+                    max-width: 168px;
+                    height: 100%;
+                    display: inline-block;
+                    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+                    background-size: cover;
+                    box-sizing: border-box;
+                    a {
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: white;
+                        cursor: pointer;
+                        .image-overlay {
+                            display: none;
+                            height: 100%;
+                            width: 100%;
+                            background-color: $primaryColorOne;
+                            opacity: 0.8;
+                        }   
+                    }
+                }
+                .image:hover a .image-overlay {
+                    display: flex;
+                    @include flexCenter;
+                }
+            }
+            .image:nth-of-type(1){
+                background-image: url("assets/photo-1493409137604-0901c55e4456.png");
+            }
+            .image:nth-of-type(2) {
+                background-image: url("assets/photo-1543364195-bfe6e4932397.png");
+            }
+            .image-wrapper-row:nth-of-type(2) .image {
+                background-image: url("assets/photo-1448387473223-5c37445527e7.png");
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}   

@@ -2,14 +2,32 @@
 @import "mixins";
 
 
+.header-line-text {
+    h1 {
+        color: $navTextColor; 
+        font-size: 36px;
+        margin-bottom: 25px; 
+    }
+    .line {
+        height: 0;
+        width: 74px;
+        border-top: 2px solid $navTextColor;
+        opacity:0.8;
+        margin-bottom: 25px;
+    }
+    p {
+        color: $navTextColor;
+        opacity: 0.8;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
 article:nth-of-type(1) {
-    @include flexColumn;
     background-color: rgba(28, 28, 28, 0.63);
     background-image: url("assets/photo-1480714378408-67cf0d13bc1b.png");
     background-blend-mode: darken;
-    background-size: cover;
-    padding: 60px 20px 0 20px;
-    box-sizing: border-box;
+    padding: 60px 20px 140px 20px;
     .text {
         .logo {
             width: 200px;
@@ -17,28 +35,6 @@ article:nth-of-type(1) {
             margin-bottom: 22px;
             svg {
                 width: 100%;
-            }
-        }
-        .header-line-text {
-
-            h1 {
-                color: $navTextColor;
-                font-size: 36px;
-                margin-bottom: 25px; 
-            }
-            .line {
-                height: 0;
-                width: 74px;
-                border-top: 2px solid $navTextColor;
-                opacity:0.8;
-                margin-bottom: 25px;
-            }
-            p {
-                color: $navTextColor;
-                opacity: 0.8;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 23px;
             }
         }
         button {
@@ -51,6 +47,9 @@ article:nth-of-type(1) {
         }
     }
     
+
+// Form style
+
     .form-wrapper {
         background-color: #F5F5F5;
         font-family: 'Montserrat';
@@ -94,8 +93,8 @@ article:nth-of-type(1) {
                     position:absolute;
                     height: 6px;
                     width: 6px;
-                    top: 3.5px;
-                    left: 3.5px;
+                    top: 4px;
+                    left: 4px;
                     background-color: $primaryColorTwo;
                     border-radius: 50%;
                 }
@@ -116,8 +115,8 @@ article:nth-of-type(1) {
                     box-sizing: border-box;
                     .radio-button {
                         background-color: white;
-                        height: 13px;
-                        width: 13px;
+                        height: 14px;
+                        width: 14px;
                         border-radius: 50%;
                         border: 1px solid $primaryColorTwo;
                         margin-right: 5px;
@@ -127,7 +126,6 @@ article:nth-of-type(1) {
                         margin-right: 17px;
                     }
                 }
-                
                 input[type=radio] {
                     display:none;
                 }
@@ -152,5 +150,6 @@ article:nth-of-type(1) {
             }
         }
     }
+    //Form style end
 }
 

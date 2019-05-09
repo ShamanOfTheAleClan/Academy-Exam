@@ -618,78 +618,66 @@ article:nth-of-type(6) {
   article:nth-of-type(6) p, article:nth-of-type(6) h2, article:nth-of-type(6) h3 {
     text-align: center;
     font-weight: 400; }
-  article:nth-of-type(6) .wrapper-price-tags {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    article:nth-of-type(6) .wrapper-price-tags .price-tag {
-      max-width: 343px;
-      width: 100%; }
-      article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top {
-        padding: 15px 0;
+  article:nth-of-type(6) .wrapper-price-tags .price-tag {
+    max-width: 343px;
+    width: 100%; }
+    article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top {
+      padding: 15px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: white;
+      width: 100%;
+      background-color: #333333;
+      border-radius: 5px 0 0 5px; }
+      article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top h2 {
+        font-size: 20px; }
+      article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top .price {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        color: white;
-        width: 100%;
-        background-color: #333333;
-        border-radius: 5px 0 0 5px; }
-        article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top h2 {
-          font-size: 20px; }
-        article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top .price {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: baseline;
-          -ms-flex-align: baseline;
-          align-items: baseline; }
-          article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top .price h2 {
-            font-size: 36px; }
-          article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top .price h3 {
-            font-size: 94px; }
-        article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top p {
-          opacity: 0.5; }
-      article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-middle {
-        border-top: 3px solid #41D395;
-        border-bottom: 3px solid #41D395;
-        background-color: #41D395;
-        color: white; }
-        article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-middle p {
-          margin: 10px 0; }
-      article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-bottom {
-        padding: 10px 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        color: #86878B;
-        height: 240px;
-        background-color: white;
-        border-radius: 0 0 5px 5px; }
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline; }
+        article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top .price h2 {
+          font-size: 36px; }
+        article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top .price h3 {
+          font-size: 94px; }
+      article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top p {
+        opacity: 0.5; }
+    article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-middle {
+      border-top: 3px solid #41D395;
+      border-bottom: 3px solid #41D395;
+      background-color: #41D395;
+      color: white; }
+      article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-middle p {
+        margin: 10px 0; }
+    article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-bottom {
+      padding: 10px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      color: #86878B;
+      height: 240px;
+      background-color: white;
+      border-radius: 0 0 5px 5px; }
 
 article:nth-of-type(7) .header-line-text {
   margin: 65px 0;
@@ -709,52 +697,53 @@ article:nth-of-type(7) .header-line-text {
   article:nth-of-type(7) .header-line-text .line {
     border-top: 2px solid #6696E2; }
 
-article:nth-of-type(7) .customer .chat-bubble {
-  background-color: #6696E2;
-  color: white;
-  padding: 20px;
-  max-width: 273px;
-  border-radius: 8px;
-  position: relative;
-  margin-bottom: 20px; }
-
-article:nth-of-type(7) .customer .chat-bubble::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #6696E2 transparent transparent transparent;
-  position: absolute;
-  bottom: -10px;
-  left: 25px; }
-
-article:nth-of-type(7) .customer .customer-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-  height: 70px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  article:nth-of-type(7) .customer .customer-wrap .customer-portrait {
+article:nth-of-type(7) .customer {
+  padding: 0 20px; }
+  article:nth-of-type(7) .customer .chat-bubble {
+    background-color: #6696E2;
+    color: white;
+    padding: 20px;
+    max-width: 273px;
+    width: calc(100vw - 80px);
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 20px; }
+  article:nth-of-type(7) .customer .chat-bubble::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #6696E2 transparent transparent transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 25px; }
+  article:nth-of-type(7) .customer .customer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
     height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    margin-right: 16px;
-    background-image: url("assets/avatar_2_u231.png");
-    background-size: cover; }
-  article:nth-of-type(7) .customer .customer-wrap .customer-name-wrap .customer-name span {
-    font-size: 20px;
-    line-height: 24px;
-    color: #333333; }
-  article:nth-of-type(7) .customer .customer-wrap .customer-name-wrap .customer-ocupation span {
-    font-size: 14px;
-    line-height: 16.8px;
-    color: #86878B; }
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    article:nth-of-type(7) .customer .customer-wrap .customer-portrait {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      margin-right: 16px;
+      background-image: url("assets/avatar_2_u231.png");
+      background-size: cover; }
+    article:nth-of-type(7) .customer .customer-wrap .customer-name-wrap .customer-name span {
+      font-size: 20px;
+      line-height: 24px;
+      color: #333333; }
+    article:nth-of-type(7) .customer .customer-wrap .customer-name-wrap .customer-ocupation span {
+      font-size: 14px;
+      line-height: 16.8px;
+      color: #86878B; }
 
 article:nth-of-type(8) {
   background-color: #E27866;
@@ -820,6 +809,7 @@ footer {
   background-color: #1C1C1C;
   width: 100%;
   max-height: 124px;
+  min-height: 60px;
   height: calc(100vw / 8);
   display: -webkit-box;
   display: -ms-flexbox;

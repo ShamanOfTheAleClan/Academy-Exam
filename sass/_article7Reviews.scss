@@ -16,11 +16,13 @@ article:nth-of-type(7) {
     }
 
     .customer {
+        padding: 0 20px;
         .chat-bubble {
             background-color: $primaryColorThree;
             color:white;
             padding: 20px;
             max-width: 273px;
+            width: calc(100vw - 80px);
             border-radius: 8px;
             position: relative;
             margin-bottom: 20px;
@@ -50,7 +52,6 @@ article:nth-of-type(7) {
                 background-image:url("assets/avatar_2_u231.png");
                 background-size: cover;
             }
-        
             .customer-name-wrap {
                 .customer-name {
                     span {

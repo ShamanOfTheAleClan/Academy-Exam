@@ -24,8 +24,7 @@ p, h2, h3 {
 
 
     .wrapper-price-tags {
-        width: 100%;
-        @include flexColumn;
+        // width: 100%;
         .price-tag {
             max-width: 343px;
             width: 100%;

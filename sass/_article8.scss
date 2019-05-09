@@ -1,0 +1,49 @@
+@import "colors";
+@import "mixins";
+
+article:nth-of-type(8) {
+    background-color: $primaryColorOne;
+    padding: 20px;
+    .form-wrapper {
+        width: 100%;
+        max-width: 390px;
+        padding: 33px 0;
+        box-sizing:border-box;
+    }
+    form {
+        display:flex;
+        flex-direction: column;
+        max-width: 260px;
+        fieldset {
+            input[type=text] {
+                border-color:  rgba(28, 28, 28, 0.5);
+                &::placeholder {
+                    color: $navBackgroundColor;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    
+    .input-wrap {
+        padding-left: 8px;
+    }
+    button {
+        border-radius: 5px;
+        width: 160px;
+        height: 48px;
+        align-self: center;
+        font-size: 15px;
+    }
+    .header-line-text {
+        margin-bottom: 27px;
+        @include flexColumn;
+        .line {
+            // @include line($primaryColorTwo);
+        }
+        p {
+            text-align: center;
+            font-weight: 400;
+        }
+    }
+}

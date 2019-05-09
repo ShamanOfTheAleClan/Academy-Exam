@@ -7,6 +7,7 @@ article:nth-of-type(5) {
     .header-line-text {
         @include flexColumn;
         margin-bottom: 65px;
+        text-align:center;
         .line {
             @include line($primaryColorOne);
             width: 64px;
@@ -14,21 +15,18 @@ article:nth-of-type(5) {
         h1 {
             font-size: 36px;
             color: #212121;
-            text-align: center;
         }
         p {
             opacity: 1;
-            font-size: 14px;
             font-weight: 400;
             color: #86878B;
-            text-align: center;
         }
     }
     .wrapper {
         @include flexColumn;
         .wrapper-item {
             @include flexColumn;
-            margin-bottom: 120px;
+            margin-bottom: 80px;
             .wrapper-logo {
                 width: 50px;
                 height: 50px;

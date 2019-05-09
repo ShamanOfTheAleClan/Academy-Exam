@@ -1,0 +1,72 @@
+@import "colors";
+@import "mixins";
+
+article:nth-of-type(7) {
+
+    .header-line-text {
+        margin: 65px 0;
+        @include flexColumn;
+        h1 {
+            color: $navBackgroundColor;
+            text-align: center;
+        }
+        .line {
+            @include line($primaryColorThree);
+        }
+    }
+
+    .customer {
+        .chat-bubble {
+            background-color: $primaryColorThree;
+            color:white;
+            padding: 20px;
+            max-width: 273px;
+            border-radius: 8px;
+            position: relative;
+            margin-bottom: 20px;
+
+        }
+        .chat-bubble::after {
+            content:"";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 10px 0 10px;
+            border-color: $primaryColorThree transparent transparent transparent; 
+            position: absolute;
+            bottom: -10px;
+            left: 25px;
+        }
+        .customer-wrap {
+            display: flex;
+            justify-content: left; 
+            height: 70px;
+            align-items: center;
+            .customer-portrait {
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+                margin-right: 16px;
+                background-image:url("assets/avatar_2_u231.png");
+                background-size: cover;
+            }
+        
+            .customer-name-wrap {
+                .customer-name {
+                    span {
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #333333;
+                    }
+                }
+                .customer-ocupation {
+                    span {
+                        font-size: 14px;
+                        line-height: 16.8px;
+                        color: #86878B;
+                    }
+                }
+            }
+        }
+    }
+}

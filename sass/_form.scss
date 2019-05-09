@@ -3,7 +3,7 @@
 
 
 .form-wrapper {
-    background-color: #F5F5F5;
+    background-color: white;
     font-family: 'Montserrat';
     max-width: 360px;
     border-radius: 5px;
@@ -11,9 +11,10 @@
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.16);
     h1 {
+        background-color: #F5F5F5;
         font-size: 20px;
         font-weight: 600;
-        margin: 17px 20px;
+        padding: 17px 20px;
         text-align: center;
         span {
             color: $primaryColorOne;
@@ -21,8 +22,7 @@
     }
     form {
         max-height: 423px;
-        background-color: white;
-        width: 100%;
+         width: 100%;
         max-width: 260px;
         fieldset:first-of-type {
             .legend {

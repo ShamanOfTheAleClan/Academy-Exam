@@ -32,7 +32,7 @@ p, h2, h3 {
             
              .price-tag-top {
                 padding: 15px 0;
-                @include flexColumn
+                @include flexColumn;
                 color: white;
                 width: 100%;
                 background-color: #333333;

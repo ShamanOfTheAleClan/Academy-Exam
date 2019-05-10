@@ -247,9 +247,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="swiper-container swiper1">
-                    <div class="wrapper-price-tags swiper-wrapper">
+                <div class="wrapper-price-tags swiper-wrapper">
 
-                        <div class="swiper-slide">
+                    <div class="swiper-slide">
                             <div class="price-tag">
                                 <div class="price-tag-top">
                                     <h2>Professional</h2>
@@ -273,9 +273,9 @@
                                     <p>EMAIL SUPPORT</p>
                                 </div>
                             </div>
-                        </div>
+                    </div>
 
-                        <div class="swiper-slide">
+                    <div class="swiper-slide">
                             <div class="price-tag">
                                 <div class="price-tag-top">
                                     <h2>Basic</h2>
@@ -297,9 +297,9 @@
                                     <p>EMAIL SUPPORT</p>
                                 </div>
                             </div>
-                        </div>
+                    </div>
 
-                        <div class="swiper-slide">
+                    <div class="swiper-slide">
                             <div class="price-tag">
                                 <div class="price-tag-top">
                                     <h2>Enterprice</h2>
@@ -321,8 +321,11 @@
                                     <p>24/7 CUSTOMER SUPPORT</p>
                                 </div>
                             </div>
-                        </div>
                     </div>
+                    
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </article>
 
@@ -621,6 +624,12 @@
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
     // If we need pagination
     // pagination: {

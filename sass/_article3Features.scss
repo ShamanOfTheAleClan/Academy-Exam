@@ -4,7 +4,7 @@
 article:nth-of-type(3) {
     background-image: linear-gradient(90deg, rgba(226,120,102,0.42) 0%, rgba(102,150,226,0.42) 100%), url("assets/christoffer-engstrom-503481-unsplash.png");
     background-blend-mode: normal ;
-    padding: 20px 0 115px 0;
+    padding: 20px 0 85px 0;
     
     .features-button-wrapper {
         display: flex;
@@ -38,12 +38,13 @@ article:nth-of-type(3) {
         @include flexColumn;
         padding: 0 20px;
         margin-top: 20px;
+        max-width: 520px;
         .text-wrapper {
             margin-bottom: 20px;
             color: white;
             h1 {
                 font-size: 36px;
-                font-weight: 600;
+                font-weight: 600; 
                 margin-bottom: 33px; 
             }
             p {

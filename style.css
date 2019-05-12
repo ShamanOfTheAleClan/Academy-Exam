@@ -199,18 +199,21 @@ nav {
   padding: 10px 20px 10px 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  nav .logo {
-    z-index: 5; }
-    nav .logo svg {
-      height: 100%; }
   nav .logo-bigger {
     display: none; }
+  nav a {
+    z-index: 5; }
+    nav a .logo {
+      z-index: 5;
+      height: 100%; }
+      nav a .logo svg {
+        height: 100%; }
   nav .burger {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     nav .burger #burger {
       width: 45px;
-      height: 30px;
+      height: 40px;
       position: relative;
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -265,9 +268,11 @@ nav {
       padding-top: 90px; }
       nav .menu-wrap ul li {
         list-style-type: none;
-        color: #FFFFFF;
         font-size: 18px;
         padding: 15px 0 15px 40px; }
+        nav .menu-wrap ul li a {
+          color: #FFFFFF;
+          text-decoration: none; }
       nav .menu-wrap ul li:hover {
         border-left: 3px solid #E27866;
         padding-left: 37px; }

@@ -9,23 +9,27 @@ nav {
     background-color: $navBackgroundColor;
     padding: 10px 20px 10px 20px;
     box-sizing: border-box;
-    .logo {
-        z-index: 5;
-        svg {
-            height: 100%;
-        }
-    }
     .logo-smaller {
         // display: none;
     }
     .logo-bigger {
         display:none;
     }
+    a {
+        z-index: 5;
+        .logo {
+            z-index: 5;
+            height: 100%;
+            svg {
+                height: 100%;
+            }
+        }
+    }
     .burger {
         box-sizing:border-box;
         #burger {
             width: 45px;
-            height: 30px;
+            height: 40px;
             position: relative;
             transform: rotate(0deg);
             transition: .5s ease-in-out;
@@ -89,9 +93,12 @@ nav {
             padding-top: 90px;
             li {
                 list-style-type: none;
-                color: $navTextColor;
                 font-size: 18px;
                 padding: 15px 0 15px $menuPaddingLeft;
+                a {
+                    color: $navTextColor;
+                    text-decoration: none; 
+                }
             }
             li:hover {
                 border-left: 3px solid $primaryColorOne;

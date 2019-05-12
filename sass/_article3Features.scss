@@ -13,27 +13,27 @@ article:nth-of-type(3) {
         max-width: 340px;
         input[type=radio] {
             display: none;
-        }
-        input[type=radio]:checked + label > .features-button {
-            background-color: $primaryColorOne;
-            span {
-                opacity: 1;
-            }
-        }
-        .features-button {
-            width: 100px;
-            height: 100px;
-            background-color: #A37169;
-            @include flexCenter;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-            span {
-                font-size: 14px;
-                color: white;
-                transform: rotate(315deg);
-                opacity: 0.5;
-            }
+    }
+    .features-button {
+        width: 100px;
+        height: 100px;
+        background-color: #A37169;
+        @include flexCenter;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        span {
+            font-size: 14px;
+            color: white;
+            transform: rotate(315deg);
+            opacity: 0.5;
         }
     }
+    .features-button-active {
+        background-color: $primaryColorOne;
+        span {
+            opacity: 1;
+        }
+    }
+}
     .text-image-wrap {
         @include flexColumn;
         padding: 0 20px;

@@ -20,3 +20,10 @@ function burgerClick()  {
 burger.addEventListener('click', burgerClick) ;
 
 }
+
+
+//uzdeti indexus ant pagination, kad jie sutaptu su slide'ais
+
+//Pagal dabartinį active pagination atidaryti slide su slideTo funkcija
+
+//

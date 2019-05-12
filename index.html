@@ -117,26 +117,26 @@
         <article id="features">
             <div class="features-button-wrapper">
                 
-                <input type="radio" name="register" id="register-button" checked>
-                <label for="register-button">
-                    <div class="features-button">
+                <!-- <input type="radio" name="register" id="register-button" checked> -->
+                <!-- <label for="register-button"> -->
+                    <div class="features-button features-button-active" index="0">
                         <span>REGISTER</span>
                     </div>
-                </label>
+                <!-- </label> -->
                 
-                <input type="radio" name="register" id="apply-button">
-                <label for="apply-button">
-                    <div class="features-button">
+                <!-- <input type="radio" name="register" id="apply-button"> -->
+                <!-- <label for="apply-button"> -->
+                    <div class="features-button" index="1">
                         <span>APPLY</span>
                     </div>
-                </label>
+                <!-- </label> -->
                 
-                <input type="radio" name="register" id="receive-button">
-                <label for="receive-button">
-                    <div class="features-button">
+                <!-- <input type="radio" name="register" id="receive-button"> -->
+                <!-- <label for="receive-button"> -->
+                    <div class="features-button" index="2">
                         <span>RECEIVE</span>
                     </div>
-                </label>
+                <!-- </label> -->
             </div>
 
             <div class="swiper-container swiper2">
@@ -703,6 +703,8 @@
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    autoHeight: true,
+    
 
     // Navigation arrows
     navigation: {
@@ -717,12 +719,18 @@
         var swiper2 = new Swiper ('.swiper2', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: false,
+    grabCursor: true,
 
     // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination2',
+    pagination: {
+      el: '.swiper-pagination2',
+    },
+
+    
     })
+
+
         var swiper3 = new Swiper ('.swiper3', {
     // Optional parameters
     direction: 'horizontal',
@@ -731,6 +739,7 @@
     // If we need pagination
     pagination: {
       el: '.swiper-pagination3',
+      clickable: true,
     },
 
     // Navigation arrows

@@ -144,7 +144,7 @@
                     <div class="swiper-slide">
                         <div class="text-image-wrap">
                         <div class="text-wrapper"> 
-                            <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+                            <h1>1 Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p> <br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                         </div>
@@ -180,7 +180,7 @@
                     <div class="swiper-slide">
                         <div class="text-image-wrap">
                             <div class="text-wrapper"> 
-                                <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+                                <h1>2 Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, praesentium incidunt? Unde quo ullam, veritatis illo impedit, cupiditate dolores ad animi in corrupti qui earum tempora sapiente. Dignissimos, repellendus unde?</p> <br>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eos laborum delectus.</p>
                             </div>
@@ -216,7 +216,7 @@
                     <div class="swiper-slide">
                         <div class="text-image-wrap">
                             <div class="text-wrapper"> 
-                                <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+                                <h1>3 Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, delectus similique nemo corporis ratione quam odit error doloribus tempore! Rem eligendi aut non? Accusantium aliquam error expedita distinctio tempora voluptatibus!</p> <br>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum porro error quia.</p>
                             </div>
@@ -699,60 +699,74 @@
     </main>
     <script src="swiper.min.js"></script>
     <script>
-        var swiper1 = new Swiper ('.swiper1', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    autoHeight: true,
-    
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination1',
+    var swiper1 = new Swiper ('.swiper1', {
+        direction: 'horizontal',
+        loop: true,
+        autoHeight: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     })
-        var swiper2 = new Swiper ('.swiper2', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-    grabCursor: true,
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination2',
-    },
-
-    
+    var swiper2 = new Swiper ('.swiper2', {
+        direction: 'horizontal',
+        loop: false,
+        grabCursor: true,
+        pagination: {
+            el: '.swiper-pagination2',
+        },
     })
 
 
-        var swiper3 = new Swiper ('.swiper3', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+    var swiper3 = new Swiper ('.swiper3', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination3',
+            clickable: true,
+        },
+    })
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination3',
-      clickable: true,
-    },
+//suzinoti dabartinio slide index
 
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
 
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
-  })
+//suzinoti aktyvu button
+let currentButton = document.querySelector(".features-button-active");
+
+//paspaudus mygtuka aktyvinam ji ir nuvarom i jo slide
+let buttons = document.querySelectorAll(".features-button");
+//visiems mygtukams uzdedam paspaudima
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("mousedown", function() {
+        //jei jau aktyvus, tai nieko nedarom
+        if (this.classList.contains("features-button-active")) {}
+        else {
+            //visiems nuimam active
+            for (let j = 0; j < buttons.length; j++) {
+                buttons[j].classList.remove("features-button-active")
+            }
+            //uzdedam active
+            this.classList.add("features-button-active");
+            //ijungiam atitinkama slide
+            let currentIndex = document.querySelector(".features-button-active").getAttribute("index");
+            swiper2.slideTo(currentIndex, 300);
+        }
+    })
+}
+
+//slide'ui uzdedam mygtuko aktyvavima ant nubraukimo
+swiper2.on("slideChange", function () {
+    let currentSlide = swiper2.activeIndex; 
+    //deaktyvuojam visus mygtukus
+    for (let j = 0; j < buttons.length; j++) {
+            buttons[j].classList.remove("features-button-active")
+    }
+    //is mygtuku masyvo pasiimam mygtuka, kurio eiles numeris
+    //atitinka slide'o index numeri ir aktyvuojam ji.
+    let activeButton = buttons[currentSlide];
+    activeButton.classList.add("features-button-active");
+})
     </script>
 </body>
 </html>

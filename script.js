@@ -14,52 +14,72 @@ function burgerClick()  {
         burger.classList.add('active');
         menu.style.transform = "translateX(0px)";
         }
-
     }
-
 burger.addEventListener('click', burgerClick) ;
-
 }
 
-// //suzinoti dabartinio slide index
-// let currentSlide = swiper2.activeIndex; 
-
-// //suzinoti aktyvu button
-// let currentButton = document.querySelector(".features-button-active");
-
-// //nustatyti dabartini slide pagal active button
-// //Suzinom aktyvaus mygtuko index ir aktyvinam tokio paties index slide
-
-// let activeIndex = currentButton.getAttribute("index");
-// window.onload=function(){    
-//     swiper2.slideTo(activeIndex, 300);
-// }
-
-// //paspaudus mygtuka aktyvinam ji ir nuvarom i jo slide
-// let buttons = document.querySelectorAll(".features-button");
-// //visiems mygtukams uzdedam paspaudima
-// for (let i = 0; i < buttons.length; i++) {
-//     buttons[i].addEventListener("mousedown", function() {
-//         //jei jau aktyvus, tai nieko nedarom
-//         if (this.classList.contains(".features-button-active")) {}
-//         else {
-//             //visiems nuimam active
-//             for (let j = 0; j < buttons.length; j++) {
-//                 buttons[j].classList.remove(".features-button-active")
-//             }
-//             //uzdedam active
-//             this.classList.add(".features-button-active");
-//             //ijungiam atitinkama slide
-//             swiper2.slideTo(activeIndex, 300);
-//         }
-//     })
-// }
-
-
-//Pagal dabartinį active mygtuka atidaryti slide su slideTo funkcija
-// let slideNumber = this.getAttribute("data-slide");
-//       mySSwiper.slideTo(slideNumber-1, 300);
-
-//Paspaudus ant pagination atidaryti atitinkamą slide
-
-//nudraginus slide pazymeti atitinkama jo pagination.
+//form validation
+function formValidation()                                    
+{ 
+    let name = document.forms["singUp"]["name"];               
+    let surname = document.forms["signUp"]["surname"];
+    let phone = document.forms["singUp"]["phone"];  
+   
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+   
+    if (address.value == "")                               
+    { 
+        window.alert("Please enter your address."); 
+        name.focus(); 
+        return false; 
+    } 
+       
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (phone.value == "")                           
+    { 
+        window.alert("Please enter your telephone number."); 
+        phone.focus(); 
+        return false; 
+    } 
+   
+    if (password.value == "")                        
+    { 
+        window.alert("Please enter your password"); 
+        password.focus(); 
+        return false; 
+    } 
+   
+    if (what.selectedIndex < 1)                  
+    { 
+        alert("Please enter your course."); 
+        what.focus(); 
+        return false; 
+    } 
+   
+    return true; 
+}

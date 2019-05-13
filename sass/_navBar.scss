@@ -10,10 +10,10 @@ nav {
     padding: 10px 20px 10px 20px;
     box-sizing: border-box;
     .logo-smaller {
-        // display: none;
+        display: block;
     }
     .logo-bigger {
-        display:none;
+        display: none;
     }
     a {
         z-index: 5;
@@ -27,6 +27,7 @@ nav {
     }
     .burger {
         box-sizing:border-box;
+        @include flexCenter;
         #burger {
             width: 45px;
             height: 40px;
@@ -72,11 +73,6 @@ nav {
             left: 50%;
         }
     }
-
-
-
-
-
     
     .menu-wrap {
         z-index: 1;
@@ -111,3 +107,16 @@ nav {
         transform: translateX(0px);
     }
 }
+
+@media only screen and (min-width: 600px) {
+    nav {
+        height: 72px;
+        .logo-smaller {
+            display: none;
+        }
+        .logo-bigger {
+            display: block;
+        }
+    }
+}
+

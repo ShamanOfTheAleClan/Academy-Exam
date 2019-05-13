@@ -9,8 +9,12 @@ article:nth-of-type(1) {
     background-blend-mode: darken;
     padding: 60px 20px 140px 20px;
     .header-line-text {
+        h1 {
+            max-width: 430px;
+        }
         p {
             font-size: 16px;
+            max-width: 650px;
         }
         line {
             opacity: 0.8;
@@ -34,8 +38,19 @@ article:nth-of-type(1) {
             background-color: rgba(0,0,0,0);
             color: $navTextColor;
             margin: 45px 0;
-            align-self: center;
         }
     }
+
+    .form-wrapper {
+        position: relative;
+        padding-bottom: 57px;
+
+        input[type=submit] {
+            position:absolute;
+            right:0;
+            left:0;
+        }
+    }
+    
 }
 

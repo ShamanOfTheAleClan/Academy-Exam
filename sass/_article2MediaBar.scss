@@ -5,10 +5,12 @@ article:nth-of-type(2) {
     background-color: white;
     padding: 20px;
     display: flex;
-    @include flexRow;
+    flex-direction: row;
+    justify-content: space-around;
     width: 100%;
     .text {
         display:none;
+        margin-right: 10px;
         h2 {
             font-size: 20px;
             font-weight: 600;
@@ -16,12 +18,31 @@ article:nth-of-type(2) {
         }
         p {
             color: #86878B;
+            max-width: 394px;
+        }
+        
+    }
+    @media only screen and (min-width: 600px) {
+        .text {
+            display: block;
+            p {
+                display: none;
+            }
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        .text {
+            p {
+                margin-top: 5px;
+                display: inline-block;
+            }
         }
     }
     .media-icon-wrapper {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
+        max-width: 560px;
         .media-icon {
             
             max-height: 30px;

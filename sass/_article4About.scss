@@ -17,13 +17,17 @@ article:nth-of-type(4) {
             }
             h1 {
                 font-size: 30px;
+                max-width: 320px;
             }
             p {
                 opacity: 1;
+                font-weight: 400;
+                max-width: 455px;
             }
         }
 
         .text-wrap {
+            max-width: 470px;
             .text-wrap-column:first-of-type {
                 margin-bottom: 36px;
             }

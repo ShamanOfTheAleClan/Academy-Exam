@@ -15,7 +15,7 @@ article:nth-of-type(8) {
         flex-direction: column;
         max-width: 260px;
         fieldset {
-            input[type=text] {
+            input[type=text], input[type=tel] {
                 border-color:  rgba(28, 28, 28, 0.5);
                 &::placeholder {
                     color: $navBackgroundColor;

@@ -7,7 +7,11 @@ article:nth-of-type(4) {
     justify-content: center;
     padding:  90px 20px;
     color: white;
-    
+    .logo {
+        display:none;
+        .a{fill:#e27866}
+        .b{fill:#fff}
+    }
     .wrapper {
         .header-line-text {
             margin-bottom: 40px;

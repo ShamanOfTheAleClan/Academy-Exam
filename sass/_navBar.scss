@@ -22,6 +22,8 @@ nav {
             height: 100%;
             svg {
                 height: 100%;
+                .a{fill:#e27866}
+                .b{fill:#fff}
             }
         }
     }
@@ -107,16 +109,3 @@ nav {
         transform: translateX(0px);
     }
 }
-
-@media only screen and (min-width: 600px) {
-    nav {
-        height: 72px;
-        .logo-smaller {
-            display: none;
-        }
-        .logo-bigger {
-            display: block;
-        }
-    }
-}
-

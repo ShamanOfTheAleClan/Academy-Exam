@@ -326,6 +326,30 @@
                 <div class="wrapper-price-tags swiper-wrapper">
 
                     <div class="swiper-slide">
+                        <div class="price-tag">
+                            <div class="price-tag-top">
+                                <h2>Basic</h2>
+                                <div class="price">
+                                    <h2>$</h2> 
+                                    <h3>0</h3>
+                                </div>
+                                <p>Free for Life</p>
+                            </div>
+            
+                            <div class="price-tag-middle"></div>
+            
+                            <div class="price-tag-bottom">
+                                <p>1 GB OF SPACE</p>
+                                <p>10 GB OF BANDWIDTH</p>
+                                <p>3 WEBSITES</p>
+                                <p>BASIC CUSTOMIZATION</p>
+                                <p>WORDPRESS INTEGRATION</p>
+                                <p>EMAIL SUPPORT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
                             <div class="price-tag">
                                 <div class="price-tag-top">
                                     <h2>Professional</h2>
@@ -345,30 +369,6 @@
                                     <p>50 GB OF BANDWIDTH</p>
                                     <p>12 WEBSITES</p>
                                     <p>ADVANCED CUSTOMIZATION</p>
-                                    <p>WORDPRESS INTEGRATION</p>
-                                    <p>EMAIL SUPPORT</p>
-                                </div>
-                            </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                            <div class="price-tag">
-                                <div class="price-tag-top">
-                                    <h2>Basic</h2>
-                                    <div class="price">
-                                        <h2>$</h2> 
-                                        <h3>0</h3>
-                                    </div>
-                                    <p>Free for Life</p>
-                                </div>
-                
-                                <div class="price-tag-middle"></div>
-                
-                                <div class="price-tag-bottom">
-                                    <p>1 GB OF SPACE</p>
-                                    <p>10 GB OF BANDWIDTH</p>
-                                    <p>3 WEBSITES</p>
-                                    <p>BASIC CUSTOMIZATION</p>
                                     <p>WORDPRESS INTEGRATION</p>
                                     <p>EMAIL SUPPORT</p>
                                 </div>
@@ -699,8 +699,20 @@
     <script>
     var swiper1 = new Swiper ('.swiper1', {
         direction: 'horizontal',
-        loop: true,
+        loop: false,
+        centeredSlides: true,
         autoHeight: true,
+        watchOverflow: true,
+        slidesPerView: 1,
+        spaceBetween: 40,
+        initialSlide: 1,
+        breakpointsInverse: true,
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+                centeredSlides: false,
+            }
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -710,6 +722,7 @@
     var swiper2 = new Swiper ('.swiper2', {
         direction: 'horizontal',
         loop: false,
+        centeredSlides: true,
         grabCursor: true,
         autoHeight: true,
         pagination: {
@@ -721,6 +734,7 @@
     var swiper3 = new Swiper ('.swiper3', {
         direction: 'horizontal',
         loop: true,
+        centeredSlides: true,
         pagination: {
             el: '.swiper-pagination3',
             clickable: true,

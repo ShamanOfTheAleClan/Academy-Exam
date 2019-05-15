@@ -18,26 +18,4 @@ function burgerClick()  {
 burger.addEventListener('click', burgerClick) ;
 }
 
-//form validation
-// function formValidation(){
-
-//     let name = document.forms["singUp"]["name"];               
-//     let surname = document.forms["signUp"]["surname"];
-//     let phone = document.forms["singUp"]["phone"];  
-   
-//     if (name.value == "")                                  
-//     { 
-//         window.alert("Please enter your name."); 
-//         console.log("something happened");
-//         // name.focus(); 
-//         return false; 
-//     } 
-
-//     if (phone.value == "")                           
-//     { 
-//         window.alert("Please enter your telephone number."); 
-//         // phone.focus(); 
-//         return false; 
-//     } 
-//     return true; 
-// }
+// https://css-tricks.com/form-validation-part-2-constraint-validation-api-javascript/

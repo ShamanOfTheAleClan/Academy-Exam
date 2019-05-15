@@ -668,8 +668,7 @@ article:nth-of-type(6) {
     font-weight: 400; }
   article:nth-of-type(6) .wrapper-price-tags .price-tag {
     max-width: 343px;
-    width: calc(100vw - 40px);
-    margin: 0 20px; }
+    width: calc(100vw - 40px); }
     article:nth-of-type(6) .wrapper-price-tags .price-tag .price-tag-top {
       padding: 15px 0;
       display: -webkit-box;
@@ -967,7 +966,13 @@ footer {
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 95%;
-    max-width: 1052px; } }
+    max-width: 1052px; }
+  article:nth-of-type(6) .wrapper-price-tags {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+    article:nth-of-type(6) .wrapper-price-tags .price-tag {
+      width: calc((100vw - 120px) / 3); } }
 
 @media (min-width: 1440px) {
   article:nth-of-type(4) .logo {

@@ -70,8 +70,6 @@
         }
     }
 
-    
-
     article:nth-of-type(4) {
         @include flexRow;
         .logo {
@@ -86,6 +84,15 @@
             justify-content: space-between;
             width: 95%;
             max-width: 1052px;
+        }
+    }
+
+    article:nth-of-type(6) {
+        .wrapper-price-tags {
+            align-items: flex-end;
+            .price-tag {
+                width: calc((100vw - 120px) / 3);
+            }
         }
     }
 }

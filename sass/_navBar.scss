@@ -14,12 +14,14 @@ nav {
     }
     .logo-bigger {
         display: none;
+        width: 119px;
     }
     a {
         z-index: 5;
         .logo {
             z-index: 5;
             height: 100%;
+            
             svg {
                 height: 100%;
                 .a{fill:#e27866}

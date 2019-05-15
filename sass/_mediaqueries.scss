@@ -8,7 +8,8 @@
             display: none;
         }
         .logo-bigger {
-            display: block;
+            display: flex;
+            margin-left: 10px;
         }
     }
 
@@ -44,6 +45,14 @@
 }
 
 @media (min-width: 1024px) {
+    article:nth-of-type(1) {
+        @include flexRow;
+        padding: 75px 40px 140px 40px;
+        .text {
+            margin-right: 90px;
+        }
+    }
+
     article:nth-of-type(2) {
         padding: 20px 40px;
         .text {

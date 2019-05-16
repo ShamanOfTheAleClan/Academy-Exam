@@ -8,11 +8,11 @@ let menu = document.querySelector(".menu-wrap");
 function burgerClick()  {
     if (burger.classList.contains('active')) {
         burger.classList.remove('active');
-        menu.style.transform = 'translateX(-160px)';
+        menu.classList.remove('translated');
         }
         else {
         burger.classList.add('active');
-        menu.style.transform = "translateX(0px)";
+        menu.classList.add('translated');
         }
     }
 burger.addEventListener('click', burgerClick) ;

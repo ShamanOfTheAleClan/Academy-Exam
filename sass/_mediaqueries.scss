@@ -14,10 +14,12 @@
     }
 
     article:nth-of-type(2) {
-        .text {
-            display: block;
-            p {
-                display: none;
+        .wrapper {
+            .text {
+                display: block;
+                p {
+                    display: none;
+                }
             }
         }
     }
@@ -43,6 +45,7 @@
             top: inherit;
             display: flex;
             align-items: center;
+            transition: none;
             ul {
                 display: flex;
                 flex-direction: row;
@@ -100,10 +103,12 @@
 
     article:nth-of-type(2) {
         padding: 20px 40px;
-        .text {
-            p {
-                margin-top: 5px;
-                display: inline-block;
+        .wrapper {
+            .text {
+                p {
+                    margin-top: 5px;
+                    display: inline-block;
+                }
             }
         }
     }

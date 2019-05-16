@@ -2,7 +2,6 @@
 @import "mixins";
 
 article:nth-of-type(7) {
-
     .header-line-text {
         margin: 65px 0;
         @include flexColumn;
@@ -16,7 +15,6 @@ article:nth-of-type(7) {
     }
 
     .customer {
-        // padding: 0 20px;
         .chat-bubble {
             background-color: $primaryColorThree;
             color:white;

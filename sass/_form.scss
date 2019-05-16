@@ -23,17 +23,12 @@
         }
     }
     form {
-        // max-height: 423px;
-        //  width: 100%;
-        // max-width: 260px;
-        
         fieldset:first-of-type {
             .legend {
                 margin-top: 30px;
             }
         }
         fieldset {
-            // padding: 0 20px;
             border: none;
             .legend {
                 font-size: 16px;
@@ -96,11 +91,9 @@
                 width: 240px;
                 &::placeholder {
                     color: #D8D8D8;
-
                 }
             }
         }
-        
     
         input[type=submit] {
             background-color: $primaryColorTwo;

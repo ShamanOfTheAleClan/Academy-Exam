@@ -4,7 +4,6 @@
 article:nth-of-type(6) {
     background-color: $primaryColorThree;
     padding: 95px 0 100px 0;
-
     .header-line-text {
         margin: 0 20px 80px 20px;
         @include flexColumn;
@@ -16,26 +15,18 @@ article:nth-of-type(6) {
             width: 64px;
         }
     }
-
-p, h2, h3 {
-    text-align: center;
-    font-weight: 400;
-}
-
-
+    p, h2, h3 {
+        text-align: center;
+        font-weight: 400;
+    }
     .wrapper-price-tags {
-        // width: 100%;
         .price-tag {
             max-width: 343px;
-            // width: 100%;
             width: calc(100vw - 40px);
-            // margin: 0 20px;
              .price-tag-top {
                 padding: 15px 0;
                 @include flexColumn;
                 color: white;
-                // width: 100%;
-                
                 background-color: #333333;
                 border-radius: 5px 5px 0 0;
                 h2 {

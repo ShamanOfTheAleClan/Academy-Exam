@@ -24,7 +24,6 @@ article:nth-of-type(8) {
             }
         }
     }
-    
     .input-wrap {
         padding-left: 8px;
     }
@@ -38,9 +37,6 @@ article:nth-of-type(8) {
     .header-line-text {
         margin-bottom: 27px;
         @include flexColumn;
-        .line {
-            // @include line($primaryColorTwo);
-        }
         p {
             text-align: center;
             font-weight: 400;

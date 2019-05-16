@@ -4,13 +4,19 @@ nav {
     height: 60px;
     width: 100%;
     left:0;
-    display: flex;
-    justify-content: space-between;
     background-color: $navBackgroundColor;
     padding: 10px 20px 10px 20px;
     box-sizing: border-box;
+    @include flexCenter;
+    .nav-wrap {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1109px;
+        width: 100%;
+    }
     .logo-smaller {
         display: block;
+        height: 40px;
     }
     .logo-bigger {
         display: none;
@@ -20,8 +26,7 @@ nav {
         z-index: 5;
         .logo {
             z-index: 5;
-            height: 100%;
-            
+            // height: 100%;
             svg {
                 height: 100%;
                 .a{fill:#e27866}

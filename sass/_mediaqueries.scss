@@ -9,7 +9,7 @@
         }
         .logo-bigger {
             display: flex;
-            margin-left: 10px;
+            // margin-left: 10px;
         }
     }
 
@@ -30,6 +30,12 @@
 }
 
 @media (min-width: 768px) {
+    nav {
+        .burger {
+            // display: none;
+        }
+    }
+
     article:nth-of-type(3) {
         justify-content: center;
         flex-direction: row;
@@ -45,6 +51,10 @@
 }
 
 @media (min-width: 1024px) {
+    nav {
+        padding: 10px 40px;
+    }
+
     article:nth-of-type(1) {
         @include flexRow;
         padding: 75px 40px 140px 40px;

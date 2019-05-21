@@ -94,7 +94,7 @@
                         width: 50%;
                         left: 0;
                         bottom: -2px;
-                        transition: 0.5s ease-in-out;
+                        transition: 0.3s ease-in-out;
                     }
                     &::after {
                         content: "";
@@ -104,12 +104,9 @@
                         width: 51%;
                         left: 50%;
                         bottom: -2px;
-                        transition: 0.5s ease-in-out;
+                        transition: 0.3s ease-in-out;
                     }
                     a {
-                        // @include flexCenter;
-                        // height: 100%;
-                        // width: 100%;
                         padding: 0 22px;
                     }
                 }

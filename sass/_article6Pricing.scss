@@ -23,6 +23,7 @@ article:nth-of-type(6) {
         .price-tag {
             max-width: 343px;
             width: calc(100vw - 40px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
              .price-tag-top {
                 padding: 15px 0;
                 @include flexColumn;

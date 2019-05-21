@@ -53,18 +53,13 @@ nav {
                 list-style-type: none;
                 font-size: 18px;
                 height: 52px;
+                position: relative;
                 a {
                     @include flexCenter;
                     color: $navTextColor;
                     text-decoration: none; 
                     width: 100%;
                     height: 100%;
-                }
-            }
-            li:hover {
-                border-left: 3px solid $primaryColorOne;
-                a {
-                    transform: translateX(-1.5px);
                 }
             }
         }

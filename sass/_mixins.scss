@@ -21,3 +21,13 @@
 @mixin line($property) {
     border-top: 2px solid $property;
 }
+@keyframes menuHover {
+    50% {
+        width: 100%;
+        left:0;   
+        }
+    100% {
+        left: 0;
+        width: 3px;
+    }
+}

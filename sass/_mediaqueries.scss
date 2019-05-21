@@ -31,6 +31,32 @@
     }
 }
 
+@media (max-width :768px) {
+    nav {
+        .menu-wrap {
+            ul {
+                li {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 0;
+                        background-color: $primaryColorOne;
+                        top: 0;
+                        left: 100%;
+                    }
+                }
+                li:hover {
+                    &::after {
+                        animation: menuHover 0.35s ease-out;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 768px) {
     nav {
         .burger {
@@ -41,8 +67,6 @@
             transform: none;
             height: 100%;
             width: 500px;
-            left: initial;
-            top: inherit;
             display: flex;
             align-items: center;
             transition: none;
@@ -57,21 +81,48 @@
                     padding: 0;
                     border-left: none;
                     font-size: 14px;
-                    height: 100%;
+                    height: calc(100% - 2px);
                     @include flexCenter;
+                    transition: 0.2s ease-in-out;
+                    border-bottom: 2px solid $primaryColorOne;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: 3px;
+                        background-color: $navBackgroundColor;
+                        width: 50%;
+                        left: 0;
+                        bottom: -2px;
+                        transition: 0.5s ease-in-out;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 3px;
+                        background-color: $navBackgroundColor;
+                        width: 51%;
+                        left: 50%;
+                        bottom: -2px;
+                        transition: 0.5s ease-in-out;
+                    }
                     a {
-                        @include flexCenter;
-                        height: 100%;
-                        width: 100%;
+                        // @include flexCenter;
+                        // height: 100%;
+                        // width: 100%;
                         padding: 0 22px;
                     }
                 }
                 li:hover{
                     border-left: none;
-                    border-bottom: 2px solid $primaryColorOne;
                     padding-left: 0;
-                    height: calc(100% - 4px);
-                    padding-top: 2px;
+                    height: calc(100% - 2px);
+                    &::after {
+                        transform:translateX(100%);
+                    }
+                    &::before {
+                        transform: translateX(-100%);
+                    }
                     a {
                         transform: none;
                     }
